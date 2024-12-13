@@ -13,7 +13,12 @@ class Home extends StatelessWidget {
             ElevatedButton(onPressed: () {
               print('HI ');
               Navigator.pushNamed(context, '/def');
-            }, child: Text('기본 위젯'))
+            }, child: Text('기본 위젯')),
+            SizedBox(height: 10,),
+            ElevatedButton(onPressed: () {
+              print('HI ');
+              Navigator.pushNamed(context, '/rowColumn');
+            }, child: Text('로우 컬럼')),
           ],
         ),
       ),
