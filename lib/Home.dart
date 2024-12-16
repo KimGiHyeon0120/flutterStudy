@@ -10,15 +10,28 @@ class Home extends StatelessWidget {
       body: Container(
         child:Row(
           children: [
+
+
             ElevatedButton(onPressed: () {
               print('HI ');
               Navigator.pushNamed(context, '/def');
             }, child: Text('기본 위젯')),
+
+
             SizedBox(height: 10,),
             ElevatedButton(onPressed: () {
               print('HI ');
               Navigator.pushNamed(context, '/rowColumn');
             }, child: Text('로우 컬럼')),
+
+
+            SizedBox(height: 10,),
+            ElevatedButton(onPressed: () {
+              print('HI ');
+              Navigator.pushNamed(context, '/boxcon');
+            }, child: Text('Box 꾸미기용')),
+
+
           ],
         ),
       ),
