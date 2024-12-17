@@ -8,7 +8,7 @@ class Home extends StatelessWidget {
     return new Scaffold(
       appBar: AppBar(title: Text('머리부분'),),
       body: Container(
-        child:Row(
+        child:Column(
           children: [
 
 
@@ -30,6 +30,13 @@ class Home extends StatelessWidget {
               print('HI ');
               Navigator.pushNamed(context, '/boxcon');
             }, child: Text('Box 꾸미기용')),
+
+
+            SizedBox(height: 10,),
+            ElevatedButton(onPressed: () {
+              print('HI ');
+              Navigator.pushNamed(context, '/con2');
+            }, child: Text('Con2로 이동하기')),
 
 
           ],

@@ -4,6 +4,7 @@ import 'About.dart';
 import 'def/Def.dart';
 import 'def/RowColumn.dart';
 import 'def/Boxcon.dart';
+import 'def/Con2.dart';
 
 final Map<String, WidgetBuilder> routes ={
   '/home': (context) => Home(),
@@ -11,5 +12,6 @@ final Map<String, WidgetBuilder> routes ={
   '/def': (context) => Def(),
   '/rowColumn': (context) => RowColumn(),
   '/boxcon': (context) => Boxcon(),
+  '/con2': (context) => Con2(),
 
 };
