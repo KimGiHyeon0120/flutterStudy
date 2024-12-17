@@ -6,6 +6,10 @@ import 'def/RowColumn.dart';
 import 'def/Boxcon.dart';
 import 'def/Con2.dart';
 
+import 'def2/Counter.dart';
+
+
+
 final Map<String, WidgetBuilder> routes ={
   '/home': (context) => Home(),
   '/about': (context) => About(),
@@ -13,5 +17,6 @@ final Map<String, WidgetBuilder> routes ={
   '/rowColumn': (context) => RowColumn(),
   '/boxcon': (context) => Boxcon(),
   '/con2': (context) => Con2(),
+  '/count': (context) => Counter(),
 
 };

@@ -39,6 +39,14 @@ class Home extends StatelessWidget {
             }, child: Text('Con2로 이동하기')),
 
 
+            SizedBox(height: 30,),
+            ElevatedButton(onPressed: () {
+              print('HI ');
+              Navigator.pushNamed(context, '/count');
+            }, child: Text('Count로 이동하기')),
+
+
+
           ],
         ),
       ),
