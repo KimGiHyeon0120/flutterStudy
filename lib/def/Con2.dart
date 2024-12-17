@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Con2 extends StatelessWidget {
+class Con2 extends StatefulWidget  {
   const Con2({super.key});
+
+  @override
+  State<Con2> createState() => _Top();
+
 
   @override
   Widget build(BuildContext context) {
@@ -12,8 +16,7 @@ class Con2 extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              //윗 동네
-              _Top(),
+
               //아랫 동네
               _Img()
             ],
@@ -31,8 +34,10 @@ class Con2 extends StatelessWidget {
 
 
 //윗 동네
-class _Top extends StatelessWidget {
-  const _Top({super.key});
+class _Top extends State<Con2> {
+
+
+  int count = 0; // 좋아요 숫자
 
   @override
   Widget build(BuildContext context) {
@@ -54,8 +59,18 @@ class _Top extends StatelessWidget {
             Text('2024.12.13'),
             SizedBox(height: 16,),
             IconButton(onPressed: (){
-
+              setState(() {
+                count++;
+              });
             }, icon: Icon(Icons.favorite, color: Colors.red,)),
+
+
+
+
+
+
+            Text('좋아요 : ${count}'),
+
             SizedBox(height: 16,),
             Text('D+100')
           ],
@@ -63,6 +78,8 @@ class _Top extends StatelessWidget {
     );
   }
 }
+
+
 
 
 
